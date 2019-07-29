@@ -85,11 +85,11 @@ public class TrackServiceImpl implements TrackService {
         }
     }
     // method to search a track by name
-    @Override
-    public Track searchTrackByName(String name){
-      // call method of repository for searching the track by name
-      return trackRepository.searchTrackByName(name);
-    }
+//    @Override
+//    public Track searchTrackByName(String name){
+//      // call method of repository for searching the track by name
+//      return trackRepository.searchTrackByName(name);
+//    }
     // method to search a top tracks
     @Override
     public List<Track> getTopTracks(){

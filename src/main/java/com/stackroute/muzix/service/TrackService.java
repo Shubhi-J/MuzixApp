@@ -25,7 +25,7 @@ public interface TrackService {
     public void deleteTrack(int id);
 
     // method to search a track by name
-    public Track searchTrackByName(String name);
+//    public Track searchTrackByName(String name);
 
     // method to fetch data from api and save it to database and then return the list saved of data to the user
     public List<Track> getTopTracks();

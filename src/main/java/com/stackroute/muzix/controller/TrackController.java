@@ -75,21 +75,21 @@ public class TrackController extends GlobalExceptionHandler {
         return responseEntity;
     }
 
-    // method to get a specific track with endpoint trackByName/{name}
-    @GetMapping("/trackByName/{name}")
-    public ResponseEntity<?> searchTrackByName(@PathVariable String name) {
-        ResponseEntity responseEntity;
-        // get track by name
-        responseEntity= new ResponseEntity<Track>(trackService.searchTrackByName(name),HttpStatus.OK);
-    return responseEntity;
-    }
-
-    // method to get a specific track with endpoint trackByName/{name}
-    @GetMapping("/topTrack")
-    public ResponseEntity<?> getTopTracks() {
-        ResponseEntity responseEntity;
-        // get track by name
-        return new ResponseEntity<List<Track>>(trackService.getTopTracks(),HttpStatus.OK);
-       // return responseEntity;
-    }
+//    // method to get a specific track with endpoint trackByName/{name}
+//    @GetMapping("/trackByName/{name}")
+//    public ResponseEntity<?> searchTrackByName(@PathVariable String name) {
+//        ResponseEntity responseEntity;
+//        // get track by name
+//        responseEntity= new ResponseEntity<Track>(trackService.searchTrackByName(name),HttpStatus.OK);
+//    return responseEntity;
+//    }
+//
+//    // method to get a specific track with endpoint trackByName/{name}
+//    @GetMapping("/topTrack")
+//    public ResponseEntity<?> getTopTracks() {
+//        ResponseEntity responseEntity;
+//        // get track by name
+//        return new ResponseEntity<List<Track>>(trackService.getTopTracks(),HttpStatus.OK);
+//       // return responseEntity;
+//    }
 }

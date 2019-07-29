@@ -5,11 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-// entity class to map with a relation
-@Entity
 // using annotations to create getter setter and constructors
 @Data
 @NoArgsConstructor
@@ -19,7 +14,6 @@ public class Track {
 
     // properties of track
     // id is the identity field
-    @Id
     private int id;
 
     private String name;
